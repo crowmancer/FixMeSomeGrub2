@@ -1,24 +1,14 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
-
+const SPEED :float = 300.0
+const halfPi :float = PI/2
 
 func _physics_process(delta: float) -> void:
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var directionLR :float = Input.get_axis("ui_left", "ui_right")
-	var directionUD :float = Input.get_axis("ui_up","ui_down");
-	if directionLR:
-		velocity.x = directionLR * SPEED;
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED);
-		
+	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	velocity = input_direction * SPEED
 	
-	if directionUD:
-		velocity.y = directionUD * SPEED;
-	else:
-		velocity.y = move_toward(velocity.y, 0, SPEED);
+	look_at(get_global_mouse_position())
+	rotate(halfPi);
 	
 	move_and_slide()
