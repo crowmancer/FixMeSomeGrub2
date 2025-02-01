@@ -3,10 +3,14 @@ extends StaticBody2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	position.snappedf(16)
+	snap()
+	print("test")
+	pass
 
+func deleteSelf():
+	queue_free();
 
-func doThing():
+func snap():
 	position.x -= 16
 	position.y += 16
 	position = position.snappedf(32)
