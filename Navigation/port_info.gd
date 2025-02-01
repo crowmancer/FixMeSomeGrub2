@@ -10,7 +10,6 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	pass
 
-func display(portName:String, portDesc:String, pos:Vector2):
-	find_child("PortName").text = portName
+func display(portDesc:String, pos:Vector2):
 	find_child("PortDesc").text = portDesc
 	position = pos + Vector2(0,20)
