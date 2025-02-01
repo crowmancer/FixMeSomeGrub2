@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="FixMeSomeGrub2"
-run/main_scene="uid://cffbidoxeusit"
+run/main_scene="uid://yahi00isk65"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
