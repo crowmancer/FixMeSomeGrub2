@@ -6,6 +6,9 @@ const _halfPi :float = PI/2
 const RAYLEN:int = 100
 static var carryBox:bool = false;
 
+func _ready() -> void:
+	Dialogic.start("res://Dialogue Stuff/Timelines/AllenTest.dtl")
+
 func _physics_process(_delta: float) -> void:
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	velocity = input_direction * SPEED
