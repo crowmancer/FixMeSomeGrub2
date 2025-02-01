@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://bf6goejuwa1fb"]
+
+[ext_resource type="Script" uid="uid://b4v27fmuv11j2" path="res://Navigation/port_info.gd" id="1_4ao7l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ao7l"]
+
+[node name="PortInfo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4ao7l")
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -72.0
+offset_right = 72.0
+offset_bottom = 76.0
+grow_horizontal = 2
+theme_override_constants/separation = 0
+vertical = true
+
+[node name="PortName" type="Label" parent="BoxContainer"]
+layout_mode = 2
+text = "[Space Port Name]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Panel" type="Panel" parent="BoxContainer/PortName"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PortDesc" type="Label" parent="BoxContainer"]
+custom_minimum_size = Vector2(144, 49)
+layout_mode = 2
+size_flags_vertical = 1
+text = "[Space port Description]"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Panel" type="Panel" parent="BoxContainer/PortDesc"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="Panel" parent="BoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4ao7l")
