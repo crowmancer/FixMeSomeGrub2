@@ -1,6 +1,7 @@
-[gd_scene load_steps=23 format=3 uid="uid://cfhbk7v561q84"]
+[gd_scene load_steps=24 format=3 uid="uid://cfhbk7v561q84"]
 
 [ext_resource type="Texture2D" uid="uid://cirumr31ktu05" path="res://Sprites/Ship/C.png" id="1_lsiem"]
+[ext_resource type="Script" uid="uid://b5ladoyn6r802" path="res://Prefab/Ship3rd.gd" id="1_n8eep"]
 [ext_resource type="Texture2D" uid="uid://p5sxjkxq5o3x" path="res://Sprites/Ship/CR.png" id="2_n8eep"]
 [ext_resource type="Texture2D" uid="uid://c7mh0qwgj14bl" path="res://Sprites/Ship/CL.png" id="3_7pmdi"]
 [ext_resource type="Texture2D" uid="uid://jkdyuvv1jslm" path="res://Sprites/Ship/fine/topF.png" id="4_y552v"]
@@ -134,16 +135,21 @@ position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 
 [node name="Displayer" type="Node" parent="."]
+script = ExtResource("1_n8eep")
 
-[node name="Center" type="Sprite2D" parent="Displayer"]
+[node name="Center" type="Area2D" parent="Displayer"]
+
+[node name="Center" type="Sprite2D" parent="Displayer/Center"]
 texture = ExtResource("1_lsiem")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Displayer/Center"]
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_lsiem")
 
-[node name="Right" type="Sprite2D" parent="Displayer"]
+[node name="Right" type="Area2D" parent="Displayer"]
 position = Vector2(32, 0)
+
+[node name="Right" type="Sprite2D" parent="Displayer/Right"]
 texture = ExtResource("2_n8eep")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Displayer/Right"]
@@ -151,8 +157,10 @@ position = Vector2(-3.5, 0)
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_n8eep")
 
-[node name="Left" type="Sprite2D" parent="Displayer"]
+[node name="Left" type="Area2D" parent="Displayer"]
 position = Vector2(-32, 0)
+
+[node name="Left" type="Sprite2D" parent="Displayer/Left"]
 texture = ExtResource("3_7pmdi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Displayer/Left"]
@@ -160,8 +168,10 @@ position = Vector2(2, 0)
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_7pmdi")
 
-[node name="CenterT" type="AnimatedSprite2D" parent="Displayer"]
+[node name="CenterT" type="Area2D" parent="Displayer"]
 position = Vector2(0, -32)
+
+[node name="CenterT" type="AnimatedSprite2D" parent="Displayer/CenterT"]
 sprite_frames = SubResource("SpriteFrames_18cxu")
 animation = &"Fine"
 autoplay = "Fine"
@@ -171,8 +181,10 @@ position = Vector2(0, 2.5)
 scale = Vector2(1.6, 1.63071)
 shape = SubResource("RectangleShape2D_y552v")
 
-[node name="LeftT" type="AnimatedSprite2D" parent="Displayer"]
+[node name="LeftT" type="Area2D" parent="Displayer"]
 position = Vector2(-32, -32)
+
+[node name="LeftT" type="AnimatedSprite2D" parent="Displayer/LeftT"]
 sprite_frames = SubResource("SpriteFrames_jswkm")
 animation = &"Fine"
 autoplay = "Fine"
@@ -181,8 +193,10 @@ autoplay = "Fine"
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_lsiem")
 
-[node name="RightT" type="AnimatedSprite2D" parent="Displayer"]
+[node name="RightT" type="Area2D" parent="Displayer"]
 position = Vector2(32, -32)
+
+[node name="RightT" type="AnimatedSprite2D" parent="Displayer/RightT"]
 sprite_frames = SubResource("SpriteFrames_d8ygy")
 animation = &"Fine"
 autoplay = "Fine"
@@ -192,8 +206,10 @@ position = Vector2(-7.5, 7.5)
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_t81lg")
 
-[node name="CenterB" type="AnimatedSprite2D" parent="Displayer"]
+[node name="CenterB" type="Area2D" parent="Displayer"]
 position = Vector2(0, 32)
+
+[node name="CenterB" type="AnimatedSprite2D" parent="Displayer/CenterB"]
 sprite_frames = SubResource("SpriteFrames_gaic4")
 animation = &"Fine"
 autoplay = "Fine"
@@ -203,8 +219,10 @@ position = Vector2(0, -2.5)
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_yhmfo")
 
-[node name="LeftB" type="AnimatedSprite2D" parent="Displayer"]
+[node name="LeftB" type="Area2D" parent="Displayer"]
 position = Vector2(-32, 32)
+
+[node name="LeftB" type="AnimatedSprite2D" parent="Displayer/LeftB"]
 sprite_frames = SubResource("SpriteFrames_uuuca")
 animation = &"Fine"
 autoplay = "Fine"
@@ -213,8 +231,10 @@ autoplay = "Fine"
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_lsiem")
 
-[node name="RightB" type="AnimatedSprite2D" parent="Displayer"]
+[node name="RightB" type="Area2D" parent="Displayer"]
 position = Vector2(32, 32)
+
+[node name="RightB" type="AnimatedSprite2D" parent="Displayer/RightB"]
 sprite_frames = SubResource("SpriteFrames_20nsc")
 animation = &"Fine"
 
