@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://7rcora3wlfof"]
+
+[ext_resource type="Script" uid="uid://jrq14vdwfpcv" path="res://Dialogue Stuff/custom_layered_portrait.gd" id="1_uubi5"]
+[ext_resource type="Texture2D" uid="uid://cthhtwfpfca3i" path="res://Dialogue Stuff/closed.png" id="2_ork1j"]
+[ext_resource type="Script" uid="uid://bb22voqa3asag" path="res://Dialogue Stuff/layer_1.gd" id="3_ork1j"]
+
+[node name="LayeredPortrait" type="CanvasGroup"]
+script = ExtResource("1_uubi5")
+
+[node name="Layer1" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_ork1j")
+script = ExtResource("3_ork1j")
+
+[node name="Timer" type="Timer" parent="."]
+process_callback = 0
+wait_time = 0.15
+autostart = true
+
+[connection signal="timeout" from="Timer" to="Layer1" method="_on_timer_timeout"]
