@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfhbk7v561q84"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1v156"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Destroyed",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"Fine",
+"speed": 5.0
+}]
+
+[node name="3RdShip" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Displayer" type="Node" parent="."]
+
+[node name="Center" type="AnimatedSprite2D" parent="Displayer"]
+sprite_frames = SubResource("SpriteFrames_1v156")
+animation = &"Fine"
+autoplay = "Fine"
