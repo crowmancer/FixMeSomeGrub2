@@ -9,6 +9,7 @@ func _physics_process(delta: float) -> void:
 	var input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	velocity = input_direction * SPEED
 	
+	#change look at mouse to not be 90deg off
 	look_at(get_global_mouse_position())
 	rotate(halfPi);
 	
@@ -24,3 +25,9 @@ func _input(event: InputEvent) -> void:
 			if(!result.is_empty()):
 				var hit = result.get("collider")
 				hit.doThing()
+	elif (event is InputEventKey and event.keycode == KEY_Q):
+		position.x -= 16
+		position.y += 16
+		position = position.snappedf(32)
+		position.x += 16
+		position.y -= 16
