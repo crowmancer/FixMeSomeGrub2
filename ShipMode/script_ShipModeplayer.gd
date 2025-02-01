@@ -40,7 +40,7 @@ func summonbox():
 	var result = space_state.intersect_ray(query)
 	if(!result):
 		var boxInst = preload("res://ShipMode/cargoBox.tscn").instantiate()
-		$"..".add_child(boxInst);
+		add_sibling(boxInst);
 		boxInst.position = get_global_mouse_position();
 		carryBox = false
 
