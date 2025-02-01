@@ -45,6 +45,5 @@ func summonbox():
 		var boxInst = preload("res://ShipMode/cargoBox.tscn").instantiate()
 		add_sibling(boxInst);
 		boxInst.position = get_global_mouse_position();
-		carryBox = false
-
-	
+		carryBox = false 
+		boxInst.snap()
