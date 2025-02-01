@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://cffbidoxeusit"]
+[gd_scene load_steps=4 format=4 uid="uid://cffbidoxeusit"]
 
 [ext_resource type="TileSet" uid="uid://dssbne6xwtyoa" path="res://test_tile_set.tres" id="1_dxt22"]
 [ext_resource type="PackedScene" uid="uid://0m8q3ilgs0it" path="res://ShipMode/ShipModePlayer.tscn" id="2_shaut"]
 [ext_resource type="PackedScene" uid="uid://bm4uglblrc7ao" path="res://ShipMode/cargoBox.tscn" id="3_mgvrf"]
-[ext_resource type="Script" uid="uid://cywr2ivr1nf8h" path="res://ShipMode/cargo_box.gd" id="4_mm5qp"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -17,12 +16,9 @@ position = Vector2(108, -57)
 
 [node name="CargoBox" parent="." instance=ExtResource("3_mgvrf")]
 position = Vector2(110, -144)
-script = ExtResource("4_mm5qp")
 
 [node name="CargoBox2" parent="." instance=ExtResource("3_mgvrf")]
 position = Vector2(113, -110)
-script = ExtResource("4_mm5qp")
 
 [node name="CargoBox3" parent="." instance=ExtResource("3_mgvrf")]
 position = Vector2(127, -177)
-script = ExtResource("4_mm5qp")

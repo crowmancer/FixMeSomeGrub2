@@ -10,31 +10,30 @@ material = SubResource("CanvasItemMaterial_2l3rf")
 
 [node name="BG" type="Sprite2D" parent="."]
 texture_filter = 1
+texture_repeat = 2
 scale = Vector2(5, 5)
 texture = ExtResource("1_2l3rf")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="SpacePort" parent="." instance=ExtResource("2_v6upb")]
+[node name="Tera Spaceport" parent="." instance=ExtResource("2_v6upb")]
 position = Vector2(-352, 25)
-nextPorts = Array[NodePath]([NodePath("../SpacePort2")])
+nextPorts = Array[NodePath]([NodePath("../Nyx Station")])
 portName = "Terra Spaceport"
 portDesc = "This is the last of what remains of Earth."
 
-[node name="Line2D" type="Line2D" parent="SpacePort"]
-
-[node name="SpacePort2" parent="." instance=ExtResource("2_v6upb")]
+[node name="Nyx Station" parent="." instance=ExtResource("2_v6upb")]
 position = Vector2(-24, -8)
-nextPorts = Array[NodePath]([NodePath("../SpacePort3"), NodePath("../SpacePort4")])
+nextPorts = Array[NodePath]([NodePath("../Hoodwinker"), NodePath("../Aeon Station")])
 portName = "Nyx Station"
 portDesc = "They say the stars glow brighter here."
 
-[node name="SpacePort3" parent="." instance=ExtResource("2_v6upb")]
+[node name="Hoodwinker" parent="." instance=ExtResource("2_v6upb")]
 position = Vector2(273, 142)
 nextPorts = Array[NodePath]([NodePath("../End Planet")])
 portDesc = "Named after a dubious fellow."
 
-[node name="SpacePort4" parent="." instance=ExtResource("2_v6upb")]
+[node name="Aeon Station" parent="." instance=ExtResource("2_v6upb")]
 position = Vector2(204, -77)
 nextPorts = Array[NodePath]([NodePath("../End Planet")])
 portName = "Aeon Station"
