@@ -39,7 +39,7 @@ func summonbox():
 	var query = PhysicsRayQueryParameters2D.create(position,get_global_mouse_position(),0x2)
 	var result = space_state.intersect_ray(query)
 	if(!result):
-		var boxInst = preload("res://cargoBox.tscn").instantiate()
+		var boxInst = preload("res://ShipMode/cargoBox.tscn").instantiate()
 		$"..".add_child(boxInst);
 		boxInst.position = get_global_mouse_position();
 		carryBox = false
