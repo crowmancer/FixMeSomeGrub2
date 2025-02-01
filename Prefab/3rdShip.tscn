@@ -1,7 +1,7 @@
 [gd_scene load_steps=24 format=3 uid="uid://cfhbk7v561q84"]
 
 [ext_resource type="Texture2D" uid="uid://cirumr31ktu05" path="res://Sprites/Ship/C.png" id="1_lsiem"]
-[ext_resource type="Script" uid="uid://b5ladoyn6r802" path="res://Prefab/Ship3rd.gd" id="1_n8eep"]
+[ext_resource type="Script" uid="uid://qwi2rxvg4645" path="res://Prefab/ShipHP.gd" id="1_n8eep"]
 [ext_resource type="Texture2D" uid="uid://p5sxjkxq5o3x" path="res://Sprites/Ship/CR.png" id="2_n8eep"]
 [ext_resource type="Texture2D" uid="uid://c7mh0qwgj14bl" path="res://Sprites/Ship/CL.png" id="3_7pmdi"]
 [ext_resource type="Texture2D" uid="uid://jkdyuvv1jslm" path="res://Sprites/Ship/fine/topF.png" id="4_y552v"]
@@ -18,6 +18,22 @@ size = Vector2(15.625, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7pmdi"]
 size = Vector2(17.5, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jswkm"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Destroyed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_t81lg")
+}],
+"loop": true,
+"name": &"Fine",
+"speed": 5.0
+}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_18cxu"]
 animations = [{
@@ -38,22 +54,6 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y552v"]
 size = Vector2(20, 16.875)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_jswkm"]
-animations = [{
-"frames": [],
-"loop": true,
-"name": &"Destroyed",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_t81lg")
-}],
-"loop": true,
-"name": &"Fine",
-"speed": 5.0
-}]
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_d8ygy"]
 animations = [{
 "frames": [],
@@ -73,6 +73,22 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t81lg"]
 size = Vector2(10.625, 10.625)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_uuuca"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Destroyed",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_0gmq8")
+}],
+"loop": true,
+"name": &"Fine",
+"speed": 5.0
+}]
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_gaic4"]
 animations = [{
 "frames": [],
@@ -91,22 +107,6 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yhmfo"]
 size = Vector2(20, 16.875)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_uuuca"]
-animations = [{
-"frames": [],
-"loop": true,
-"name": &"Destroyed",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("8_0gmq8")
-}],
-"loop": true,
-"name": &"Fine",
-"speed": 5.0
-}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_20nsc"]
 animations = [{
@@ -168,6 +168,18 @@ position = Vector2(2, 0)
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_7pmdi")
 
+[node name="LeftT" type="Area2D" parent="Displayer"]
+position = Vector2(-32, -32)
+
+[node name="LeftT" type="AnimatedSprite2D" parent="Displayer/LeftT"]
+sprite_frames = SubResource("SpriteFrames_jswkm")
+animation = &"Fine"
+autoplay = "Fine"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Displayer/LeftT"]
+scale = Vector2(1.6, 1.6)
+shape = SubResource("RectangleShape2D_lsiem")
+
 [node name="CenterT" type="Area2D" parent="Displayer"]
 position = Vector2(0, -32)
 
@@ -180,18 +192,6 @@ autoplay = "Fine"
 position = Vector2(0, 2.5)
 scale = Vector2(1.6, 1.63071)
 shape = SubResource("RectangleShape2D_y552v")
-
-[node name="LeftT" type="Area2D" parent="Displayer"]
-position = Vector2(-32, -32)
-
-[node name="LeftT" type="AnimatedSprite2D" parent="Displayer/LeftT"]
-sprite_frames = SubResource("SpriteFrames_jswkm")
-animation = &"Fine"
-autoplay = "Fine"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Displayer/LeftT"]
-scale = Vector2(1.6, 1.6)
-shape = SubResource("RectangleShape2D_lsiem")
 
 [node name="RightT" type="Area2D" parent="Displayer"]
 position = Vector2(32, -32)
@@ -206,6 +206,18 @@ position = Vector2(-7.5, 7.5)
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_t81lg")
 
+[node name="LeftB" type="Area2D" parent="Displayer"]
+position = Vector2(-32, 32)
+
+[node name="LeftB" type="AnimatedSprite2D" parent="Displayer/LeftB"]
+sprite_frames = SubResource("SpriteFrames_uuuca")
+animation = &"Fine"
+autoplay = "Fine"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Displayer/LeftB"]
+scale = Vector2(1.6, 1.6)
+shape = SubResource("RectangleShape2D_lsiem")
+
 [node name="CenterB" type="Area2D" parent="Displayer"]
 position = Vector2(0, 32)
 
@@ -218,18 +230,6 @@ autoplay = "Fine"
 position = Vector2(0, -2.5)
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_yhmfo")
-
-[node name="LeftB" type="Area2D" parent="Displayer"]
-position = Vector2(-32, 32)
-
-[node name="LeftB" type="AnimatedSprite2D" parent="Displayer/LeftB"]
-sprite_frames = SubResource("SpriteFrames_uuuca")
-animation = &"Fine"
-autoplay = "Fine"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Displayer/LeftB"]
-scale = Vector2(1.6, 1.6)
-shape = SubResource("RectangleShape2D_lsiem")
 
 [node name="RightB" type="Area2D" parent="Displayer"]
 position = Vector2(32, 32)
