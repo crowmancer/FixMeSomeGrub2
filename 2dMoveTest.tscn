@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=4 uid="uid://cffbidoxeusit"]
 
 [ext_resource type="TileSet" uid="uid://dssbne6xwtyoa" path="res://test_tile_set.tres" id="1_dxt22"]
-[ext_resource type="PackedScene" uid="uid://0m8q3ilgs0it" path="res://player.tscn" id="2_shaut"]
-[ext_resource type="PackedScene" uid="uid://bm4uglblrc7ao" path="res://cargoBox.tscn" id="3_mgvrf"]
+[ext_resource type="PackedScene" uid="uid://0m8q3ilgs0it" path="res://ShipMode/ShipePlayerplayer.tscn" id="2_shaut"]
+[ext_resource type="PackedScene" uid="uid://bm4uglblrc7ao" path="res://ShipMode/cargoBox.tscn" id="3_mgvrf"]
 
 [node name="Node2D" type="Node2D"]
 

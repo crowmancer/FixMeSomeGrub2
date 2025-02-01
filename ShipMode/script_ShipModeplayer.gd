@@ -20,7 +20,8 @@ func _input(event: InputEvent) -> void:
 	if(event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed):
 		#shoot raycast
 		if(position.distance_to(get_global_mouse_position()) <=  RAYLEN):
-			#maybe switch all this raycast stuff to actual raycast node?
+			#maybe switch all this raycast stuff to actual raycast node????
+			#it works for now so idc
 			var space_state:PhysicsDirectSpaceState2D = get_world_2d().direct_space_state
 			var query = PhysicsRayQueryParameters2D.create(position,get_global_mouse_position(),0x2)
 			var result = space_state.intersect_ray(query)

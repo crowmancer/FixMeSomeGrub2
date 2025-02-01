@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://ok75erp3r17y"]
+
+[ext_resource type="Texture2D" uid="uid://c04yxw5ieeqdh" path="res://Navigation/stars 11.jpg" id="1_2l3rf"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2l3rf"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_2l3rf"]
+
+[sub_resource type="MeshTexture" id="MeshTexture_chpwg"]
+mesh = SubResource("SphereMesh_2l3rf")
+
+[node name="Navigation" type="Node2D"]
+material = SubResource("CanvasItemMaterial_2l3rf")
+
+[node name="BG" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+scale = Vector2(5, 5)
+texture = ExtResource("1_2l3rf")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("MeshTexture_chpwg")
