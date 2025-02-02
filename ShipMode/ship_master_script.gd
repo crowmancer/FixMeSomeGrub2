@@ -18,6 +18,10 @@ func _ready() -> void:
 			if(partHealths[i] < 0):
 				var room:Node = get_node(roomNodes[i])
 				var collider:Node = room.find_child("CollisionShape2D")
+				var area:Node = room.find_child("Area2D")
+				var killingdaboxes = area.get_overlapping_bodies()
 				room.visible = true
 				collider.disabled = false
+				for body in killingdaboxes:
+					body.deleteself()
 		ShipHP = PLAYERDATA["shipHP"]
