@@ -3,7 +3,8 @@ extends StaticBody2D
 @export var nextPorts:Array[NodePath] = []
 @export var portName:String = "Hoodwinker Spaceport"
 @export var portDesc:String = "This is a spaceport"
-
+var isAvailable:bool = false
+var isShop:bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	#do the lines between the ports
@@ -23,11 +24,19 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	pass
-static var info
+static var smallinfo
 func _input_event(_viewport: Viewport, _event: InputEvent, _shape_idx: int) -> void:
 	if(Input.is_action_just_pressed("left_mouse_click")):
-		if(info):
-			info.queue_free()
-		info = preload("res://Navigation/portInfo.tscn").instantiate()
-		add_sibling(info)
-		info.display(portName,portDesc,global_position)
+		if(smallinfo):
+			##clear the already open infobox
+			smallinfo.queue_free()
+			
+		smallinfo = preload("res://Navigation/portInfo.tscn").instantiate()
+		add_sibling(smallinfo)
+		smallinfo.display(portDesc,global_position,isAvailable,isShop)
+		
+func mark():
+	isShop = true
+	$Circle.modulate = Color("#FF0000")
+	for port in nextPorts:
+		get_node(port).isAvailable = true;
