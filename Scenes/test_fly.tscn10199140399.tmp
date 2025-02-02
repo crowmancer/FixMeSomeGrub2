@@ -1,0 +1,1090 @@
+[gd_scene load_steps=3 format=3 uid="uid://xwuk6mtv0n5"]
+
+[ext_resource type="PackedScene" uid="uid://cfhbk7v561q84" path="res://Prefab/3rdShip.tscn" id="1_yo4ys"]
+[ext_resource type="PackedScene" uid="uid://dmk7w5iwglm27" path="res://Prefab/BasicEnemyAttack.tscn" id="2_5ytgk"]
+
+[node name="TestFly" type="Node2D"]
+
+[node name="BasicEnemyAttack" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(7, -61)
+
+[node name="BasicEnemyAttack2" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(29, -61)
+
+[node name="BasicEnemyAttack3" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-15, -61)
+
+[node name="BasicEnemyAttack4" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(7, -86)
+
+[node name="BasicEnemyAttack5" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-37, -61)
+
+[node name="BasicEnemyAttack6" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-4, -61)
+
+[node name="BasicEnemyAttack7" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(18, -61)
+
+[node name="BasicEnemyAttack8" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(40, -61)
+
+[node name="BasicEnemyAttack9" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-26, -61)
+
+[node name="BasicEnemyAttack10" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-48, -86)
+
+[node name="BasicEnemyAttack11" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(51, -61)
+
+[node name="BasicEnemyAttack12" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-37, -86)
+
+[node name="BasicEnemyAttack13" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-26, -86)
+
+[node name="BasicEnemyAttack14" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-15, -86)
+
+[node name="BasicEnemyAttack15" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-4, -86)
+
+[node name="BasicEnemyAttack16" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(18, -86)
+
+[node name="BasicEnemyAttack17" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(29, -86)
+
+[node name="BasicEnemyAttack18" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(40, -86)
+
+[node name="BasicEnemyAttack19" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-48, -61)
+
+[node name="BasicEnemyAttack20" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(51, -86)
+
+[node name="BasicEnemyAttack21" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(7, -111)
+
+[node name="BasicEnemyAttack22" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(29, -111)
+
+[node name="BasicEnemyAttack23" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-15, -111)
+
+[node name="BasicEnemyAttack24" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(7, -136)
+
+[node name="BasicEnemyAttack25" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-37, -111)
+
+[node name="BasicEnemyAttack26" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-4, -111)
+
+[node name="BasicEnemyAttack27" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(18, -111)
+
+[node name="BasicEnemyAttack28" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(40, -111)
+
+[node name="BasicEnemyAttack29" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-26, -111)
+
+[node name="BasicEnemyAttack30" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-48, -136)
+
+[node name="BasicEnemyAttack31" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(51, -111)
+
+[node name="BasicEnemyAttack32" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-37, -136)
+
+[node name="BasicEnemyAttack33" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-26, -136)
+
+[node name="BasicEnemyAttack34" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-15, -136)
+
+[node name="BasicEnemyAttack35" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-4, -136)
+
+[node name="BasicEnemyAttack36" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(18, -136)
+
+[node name="BasicEnemyAttack37" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(29, -136)
+
+[node name="BasicEnemyAttack38" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(40, -136)
+
+[node name="BasicEnemyAttack39" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-48, -111)
+
+[node name="BasicEnemyAttack40" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(51, -136)
+
+[node name="BasicEnemyAttack41" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(117, -61)
+
+[node name="BasicEnemyAttack42" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(139, -61)
+
+[node name="BasicEnemyAttack43" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(95, -61)
+
+[node name="BasicEnemyAttack44" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(117, -86)
+
+[node name="BasicEnemyAttack45" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(73, -61)
+
+[node name="BasicEnemyAttack46" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(106, -61)
+
+[node name="BasicEnemyAttack47" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(128, -61)
+
+[node name="BasicEnemyAttack48" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(150, -61)
+
+[node name="BasicEnemyAttack49" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(84, -61)
+
+[node name="BasicEnemyAttack50" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(62, -86)
+
+[node name="BasicEnemyAttack51" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(161, -61)
+
+[node name="BasicEnemyAttack52" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(73, -86)
+
+[node name="BasicEnemyAttack53" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(84, -86)
+
+[node name="BasicEnemyAttack54" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(95, -86)
+
+[node name="BasicEnemyAttack55" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(106, -86)
+
+[node name="BasicEnemyAttack56" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(128, -86)
+
+[node name="BasicEnemyAttack57" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(139, -86)
+
+[node name="BasicEnemyAttack58" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(150, -86)
+
+[node name="BasicEnemyAttack59" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(62, -61)
+
+[node name="BasicEnemyAttack60" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(161, -86)
+
+[node name="BasicEnemyAttack61" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(117, -111)
+
+[node name="BasicEnemyAttack62" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(139, -111)
+
+[node name="BasicEnemyAttack63" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(95, -111)
+
+[node name="BasicEnemyAttack64" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(117, -136)
+
+[node name="BasicEnemyAttack65" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(73, -111)
+
+[node name="BasicEnemyAttack66" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(106, -111)
+
+[node name="BasicEnemyAttack67" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(128, -111)
+
+[node name="BasicEnemyAttack68" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(150, -111)
+
+[node name="BasicEnemyAttack69" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(84, -111)
+
+[node name="BasicEnemyAttack70" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(62, -136)
+
+[node name="BasicEnemyAttack71" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(161, -111)
+
+[node name="BasicEnemyAttack72" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(73, -136)
+
+[node name="BasicEnemyAttack73" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(84, -136)
+
+[node name="BasicEnemyAttack74" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(95, -136)
+
+[node name="BasicEnemyAttack75" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(106, -136)
+
+[node name="BasicEnemyAttack76" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(128, -136)
+
+[node name="BasicEnemyAttack77" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(139, -136)
+
+[node name="BasicEnemyAttack78" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(150, -136)
+
+[node name="BasicEnemyAttack79" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(62, -111)
+
+[node name="BasicEnemyAttack80" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(161, -136)
+
+[node name="BasicEnemyAttack81" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-103, -61)
+
+[node name="BasicEnemyAttack82" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-81, -61)
+
+[node name="BasicEnemyAttack83" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-125, -61)
+
+[node name="BasicEnemyAttack84" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-103, -86)
+
+[node name="BasicEnemyAttack85" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-147, -61)
+
+[node name="BasicEnemyAttack86" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-114, -61)
+
+[node name="BasicEnemyAttack87" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-92, -61)
+
+[node name="BasicEnemyAttack88" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-70, -61)
+
+[node name="BasicEnemyAttack89" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-136, -61)
+
+[node name="BasicEnemyAttack90" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-158, -86)
+
+[node name="BasicEnemyAttack91" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-59, -61)
+
+[node name="BasicEnemyAttack92" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-147, -86)
+
+[node name="BasicEnemyAttack93" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-136, -86)
+
+[node name="BasicEnemyAttack94" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-125, -86)
+
+[node name="BasicEnemyAttack95" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-114, -86)
+
+[node name="BasicEnemyAttack96" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-92, -86)
+
+[node name="BasicEnemyAttack97" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-81, -86)
+
+[node name="BasicEnemyAttack98" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-70, -86)
+
+[node name="BasicEnemyAttack99" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-158, -61)
+
+[node name="BasicEnemyAttack100" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-59, -86)
+
+[node name="BasicEnemyAttack101" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-103, -111)
+
+[node name="BasicEnemyAttack102" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-81, -111)
+
+[node name="BasicEnemyAttack103" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-125, -111)
+
+[node name="BasicEnemyAttack104" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-103, -136)
+
+[node name="BasicEnemyAttack105" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-147, -111)
+
+[node name="BasicEnemyAttack106" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-114, -111)
+
+[node name="BasicEnemyAttack107" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-92, -111)
+
+[node name="BasicEnemyAttack108" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-70, -111)
+
+[node name="BasicEnemyAttack109" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-136, -111)
+
+[node name="BasicEnemyAttack110" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-158, -136)
+
+[node name="BasicEnemyAttack111" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-59, -111)
+
+[node name="BasicEnemyAttack112" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-147, -136)
+
+[node name="BasicEnemyAttack113" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-136, -136)
+
+[node name="BasicEnemyAttack114" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-125, -136)
+
+[node name="BasicEnemyAttack115" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-114, -136)
+
+[node name="BasicEnemyAttack116" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-92, -136)
+
+[node name="BasicEnemyAttack117" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-81, -136)
+
+[node name="BasicEnemyAttack118" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-70, -136)
+
+[node name="BasicEnemyAttack119" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-158, -111)
+
+[node name="BasicEnemyAttack120" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-59, -136)
+
+[node name="BasicEnemyAttack121" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(7, -161)
+
+[node name="BasicEnemyAttack122" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(29, -161)
+
+[node name="BasicEnemyAttack123" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-15, -161)
+
+[node name="BasicEnemyAttack124" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(7, -186)
+
+[node name="BasicEnemyAttack125" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-37, -161)
+
+[node name="BasicEnemyAttack126" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-4, -161)
+
+[node name="BasicEnemyAttack127" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(18, -161)
+
+[node name="BasicEnemyAttack128" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(40, -161)
+
+[node name="BasicEnemyAttack129" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-26, -161)
+
+[node name="BasicEnemyAttack130" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-48, -186)
+
+[node name="BasicEnemyAttack131" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(51, -161)
+
+[node name="BasicEnemyAttack132" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-37, -186)
+
+[node name="BasicEnemyAttack133" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-26, -186)
+
+[node name="BasicEnemyAttack134" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-15, -186)
+
+[node name="BasicEnemyAttack135" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-4, -186)
+
+[node name="BasicEnemyAttack136" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(18, -186)
+
+[node name="BasicEnemyAttack137" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(29, -186)
+
+[node name="BasicEnemyAttack138" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(40, -186)
+
+[node name="BasicEnemyAttack139" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-48, -161)
+
+[node name="BasicEnemyAttack140" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(51, -186)
+
+[node name="BasicEnemyAttack141" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(7, -211)
+
+[node name="BasicEnemyAttack142" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(29, -211)
+
+[node name="BasicEnemyAttack143" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-15, -211)
+
+[node name="BasicEnemyAttack144" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(7, -236)
+
+[node name="BasicEnemyAttack145" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-37, -211)
+
+[node name="BasicEnemyAttack146" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-4, -211)
+
+[node name="BasicEnemyAttack147" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(18, -211)
+
+[node name="BasicEnemyAttack148" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(40, -211)
+
+[node name="BasicEnemyAttack149" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-26, -211)
+
+[node name="BasicEnemyAttack150" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-48, -236)
+
+[node name="BasicEnemyAttack151" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(51, -211)
+
+[node name="BasicEnemyAttack152" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-37, -236)
+
+[node name="BasicEnemyAttack153" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-26, -236)
+
+[node name="BasicEnemyAttack154" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-15, -236)
+
+[node name="BasicEnemyAttack155" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-4, -236)
+
+[node name="BasicEnemyAttack156" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(18, -236)
+
+[node name="BasicEnemyAttack157" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(29, -236)
+
+[node name="BasicEnemyAttack158" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(40, -236)
+
+[node name="BasicEnemyAttack159" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-48, -211)
+
+[node name="BasicEnemyAttack160" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(51, -236)
+
+[node name="BasicEnemyAttack161" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(117, -161)
+
+[node name="BasicEnemyAttack162" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(139, -161)
+
+[node name="BasicEnemyAttack163" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(95, -161)
+
+[node name="BasicEnemyAttack164" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(117, -186)
+
+[node name="BasicEnemyAttack165" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(73, -161)
+
+[node name="BasicEnemyAttack166" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(106, -161)
+
+[node name="BasicEnemyAttack167" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(128, -161)
+
+[node name="BasicEnemyAttack168" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(150, -161)
+
+[node name="BasicEnemyAttack169" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(84, -161)
+
+[node name="BasicEnemyAttack170" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(62, -186)
+
+[node name="BasicEnemyAttack171" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(161, -161)
+
+[node name="BasicEnemyAttack172" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(73, -186)
+
+[node name="BasicEnemyAttack173" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(84, -186)
+
+[node name="BasicEnemyAttack174" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(95, -186)
+
+[node name="BasicEnemyAttack175" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(106, -186)
+
+[node name="BasicEnemyAttack176" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(128, -186)
+
+[node name="BasicEnemyAttack177" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(139, -186)
+
+[node name="BasicEnemyAttack178" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(150, -186)
+
+[node name="BasicEnemyAttack179" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(62, -161)
+
+[node name="BasicEnemyAttack180" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(161, -186)
+
+[node name="BasicEnemyAttack181" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(117, -211)
+
+[node name="BasicEnemyAttack182" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(139, -211)
+
+[node name="BasicEnemyAttack183" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(95, -211)
+
+[node name="BasicEnemyAttack184" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(117, -236)
+
+[node name="BasicEnemyAttack185" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(73, -211)
+
+[node name="BasicEnemyAttack186" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(106, -211)
+
+[node name="BasicEnemyAttack187" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(128, -211)
+
+[node name="BasicEnemyAttack188" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(150, -211)
+
+[node name="BasicEnemyAttack189" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(84, -211)
+
+[node name="BasicEnemyAttack190" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(62, -236)
+
+[node name="BasicEnemyAttack191" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(161, -211)
+
+[node name="BasicEnemyAttack192" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(73, -236)
+
+[node name="BasicEnemyAttack193" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(84, -236)
+
+[node name="BasicEnemyAttack194" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(95, -236)
+
+[node name="BasicEnemyAttack195" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(106, -236)
+
+[node name="BasicEnemyAttack196" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(128, -236)
+
+[node name="BasicEnemyAttack197" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(139, -236)
+
+[node name="BasicEnemyAttack198" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(150, -236)
+
+[node name="BasicEnemyAttack199" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(62, -211)
+
+[node name="BasicEnemyAttack200" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(161, -236)
+
+[node name="BasicEnemyAttack201" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-103, -161)
+
+[node name="BasicEnemyAttack202" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-81, -161)
+
+[node name="BasicEnemyAttack203" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-125, -161)
+
+[node name="BasicEnemyAttack204" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-103, -186)
+
+[node name="BasicEnemyAttack205" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-147, -161)
+
+[node name="BasicEnemyAttack206" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-114, -161)
+
+[node name="BasicEnemyAttack207" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-92, -161)
+
+[node name="BasicEnemyAttack208" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-70, -161)
+
+[node name="BasicEnemyAttack209" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-136, -161)
+
+[node name="BasicEnemyAttack210" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-158, -186)
+
+[node name="BasicEnemyAttack211" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-59, -161)
+
+[node name="BasicEnemyAttack212" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-147, -186)
+
+[node name="BasicEnemyAttack213" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-136, -186)
+
+[node name="BasicEnemyAttack214" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-125, -186)
+
+[node name="BasicEnemyAttack215" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-114, -186)
+
+[node name="BasicEnemyAttack216" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-92, -186)
+
+[node name="BasicEnemyAttack217" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-81, -186)
+
+[node name="BasicEnemyAttack218" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-70, -186)
+
+[node name="BasicEnemyAttack219" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-158, -161)
+
+[node name="BasicEnemyAttack220" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-59, -186)
+
+[node name="BasicEnemyAttack221" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-103, -211)
+
+[node name="BasicEnemyAttack222" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-81, -211)
+
+[node name="BasicEnemyAttack223" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-125, -211)
+
+[node name="BasicEnemyAttack224" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-103, -236)
+
+[node name="BasicEnemyAttack225" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-147, -211)
+
+[node name="BasicEnemyAttack226" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-114, -211)
+
+[node name="BasicEnemyAttack227" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-92, -211)
+
+[node name="BasicEnemyAttack228" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-70, -211)
+
+[node name="BasicEnemyAttack229" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-136, -211)
+
+[node name="BasicEnemyAttack230" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-158, -236)
+
+[node name="BasicEnemyAttack231" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-59, -211)
+
+[node name="BasicEnemyAttack232" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-147, -236)
+
+[node name="BasicEnemyAttack233" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-136, -236)
+
+[node name="BasicEnemyAttack234" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-125, -236)
+
+[node name="BasicEnemyAttack235" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-114, -236)
+
+[node name="BasicEnemyAttack236" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-92, -236)
+
+[node name="BasicEnemyAttack237" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-81, -236)
+
+[node name="BasicEnemyAttack238" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-70, -236)
+
+[node name="BasicEnemyAttack239" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-158, -211)
+
+[node name="BasicEnemyAttack240" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-59, -236)
+
+[node name="BasicEnemyAttack241" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(7, -261)
+
+[node name="BasicEnemyAttack242" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(29, -261)
+
+[node name="BasicEnemyAttack243" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-15, -261)
+
+[node name="BasicEnemyAttack244" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(7, -286)
+
+[node name="BasicEnemyAttack245" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-37, -261)
+
+[node name="BasicEnemyAttack246" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-4, -261)
+
+[node name="BasicEnemyAttack247" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(18, -261)
+
+[node name="BasicEnemyAttack248" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(40, -261)
+
+[node name="BasicEnemyAttack249" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-26, -261)
+
+[node name="BasicEnemyAttack250" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-48, -286)
+
+[node name="BasicEnemyAttack251" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(51, -261)
+
+[node name="BasicEnemyAttack252" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-37, -286)
+
+[node name="BasicEnemyAttack253" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-26, -286)
+
+[node name="BasicEnemyAttack254" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-15, -286)
+
+[node name="BasicEnemyAttack255" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-4, -286)
+
+[node name="BasicEnemyAttack256" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(18, -286)
+
+[node name="BasicEnemyAttack257" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(29, -286)
+
+[node name="BasicEnemyAttack258" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(40, -286)
+
+[node name="BasicEnemyAttack259" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-48, -261)
+
+[node name="BasicEnemyAttack260" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(51, -286)
+
+[node name="BasicEnemyAttack261" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(7, -311)
+
+[node name="BasicEnemyAttack262" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(29, -311)
+
+[node name="BasicEnemyAttack263" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-15, -311)
+
+[node name="BasicEnemyAttack264" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(7, -336)
+
+[node name="BasicEnemyAttack265" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-37, -311)
+
+[node name="BasicEnemyAttack266" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-4, -311)
+
+[node name="BasicEnemyAttack267" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(18, -311)
+
+[node name="BasicEnemyAttack268" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(40, -311)
+
+[node name="BasicEnemyAttack269" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-26, -311)
+
+[node name="BasicEnemyAttack270" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-48, -336)
+
+[node name="BasicEnemyAttack271" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(51, -311)
+
+[node name="BasicEnemyAttack272" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-37, -336)
+
+[node name="BasicEnemyAttack273" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-26, -336)
+
+[node name="BasicEnemyAttack274" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-15, -336)
+
+[node name="BasicEnemyAttack275" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-4, -336)
+
+[node name="BasicEnemyAttack276" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(18, -336)
+
+[node name="BasicEnemyAttack277" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(29, -336)
+
+[node name="BasicEnemyAttack278" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(40, -336)
+
+[node name="BasicEnemyAttack279" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-48, -311)
+
+[node name="BasicEnemyAttack280" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(51, -336)
+
+[node name="BasicEnemyAttack281" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(117, -261)
+
+[node name="BasicEnemyAttack282" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(139, -261)
+
+[node name="BasicEnemyAttack283" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(95, -261)
+
+[node name="BasicEnemyAttack284" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(117, -286)
+
+[node name="BasicEnemyAttack285" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(73, -261)
+
+[node name="BasicEnemyAttack286" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(106, -261)
+
+[node name="BasicEnemyAttack287" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(128, -261)
+
+[node name="BasicEnemyAttack288" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(150, -261)
+
+[node name="BasicEnemyAttack289" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(84, -261)
+
+[node name="BasicEnemyAttack290" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(62, -286)
+
+[node name="BasicEnemyAttack291" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(161, -261)
+
+[node name="BasicEnemyAttack292" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(73, -286)
+
+[node name="BasicEnemyAttack293" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(84, -286)
+
+[node name="BasicEnemyAttack294" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(95, -286)
+
+[node name="BasicEnemyAttack295" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(106, -286)
+
+[node name="BasicEnemyAttack296" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(128, -286)
+
+[node name="BasicEnemyAttack297" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(139, -286)
+
+[node name="BasicEnemyAttack298" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(150, -286)
+
+[node name="BasicEnemyAttack299" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(62, -261)
+
+[node name="BasicEnemyAttack300" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(161, -286)
+
+[node name="BasicEnemyAttack301" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(117, -311)
+
+[node name="BasicEnemyAttack302" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(139, -311)
+
+[node name="BasicEnemyAttack303" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(95, -311)
+
+[node name="BasicEnemyAttack304" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(117, -336)
+
+[node name="BasicEnemyAttack305" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(73, -311)
+
+[node name="BasicEnemyAttack306" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(106, -311)
+
+[node name="BasicEnemyAttack307" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(128, -311)
+
+[node name="BasicEnemyAttack308" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(150, -311)
+
+[node name="BasicEnemyAttack309" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(84, -311)
+
+[node name="BasicEnemyAttack310" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(62, -336)
+
+[node name="BasicEnemyAttack311" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(161, -311)
+
+[node name="BasicEnemyAttack312" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(73, -336)
+
+[node name="BasicEnemyAttack313" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(84, -336)
+
+[node name="BasicEnemyAttack314" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(95, -336)
+
+[node name="BasicEnemyAttack315" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(106, -336)
+
+[node name="BasicEnemyAttack316" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(128, -336)
+
+[node name="BasicEnemyAttack317" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(139, -336)
+
+[node name="BasicEnemyAttack318" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(150, -336)
+
+[node name="BasicEnemyAttack319" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(62, -311)
+
+[node name="BasicEnemyAttack320" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(161, -336)
+
+[node name="BasicEnemyAttack321" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-103, -261)
+
+[node name="BasicEnemyAttack322" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-81, -261)
+
+[node name="BasicEnemyAttack323" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-125, -261)
+
+[node name="BasicEnemyAttack324" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-103, -286)
+
+[node name="BasicEnemyAttack325" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-147, -261)
+
+[node name="BasicEnemyAttack326" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-114, -261)
+
+[node name="BasicEnemyAttack327" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-92, -261)
+
+[node name="BasicEnemyAttack328" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-70, -261)
+
+[node name="BasicEnemyAttack329" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-136, -261)
+
+[node name="BasicEnemyAttack330" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-158, -286)
+
+[node name="BasicEnemyAttack331" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-59, -261)
+
+[node name="BasicEnemyAttack332" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-147, -286)
+
+[node name="BasicEnemyAttack333" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-136, -286)
+
+[node name="BasicEnemyAttack334" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-125, -286)
+
+[node name="BasicEnemyAttack335" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-114, -286)
+
+[node name="BasicEnemyAttack336" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-92, -286)
+
+[node name="BasicEnemyAttack337" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-81, -286)
+
+[node name="BasicEnemyAttack338" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-70, -286)
+
+[node name="BasicEnemyAttack339" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-158, -261)
+
+[node name="BasicEnemyAttack340" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-59, -286)
+
+[node name="BasicEnemyAttack341" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-103, -311)
+
+[node name="BasicEnemyAttack342" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-81, -311)
+
+[node name="BasicEnemyAttack343" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-125, -311)
+
+[node name="BasicEnemyAttack344" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-103, -336)
+
+[node name="BasicEnemyAttack345" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-147, -311)
+
+[node name="BasicEnemyAttack346" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-114, -311)
+
+[node name="BasicEnemyAttack347" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-92, -311)
+
+[node name="BasicEnemyAttack348" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-70, -311)
+
+[node name="BasicEnemyAttack349" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-136, -311)
+
+[node name="BasicEnemyAttack350" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-158, -336)
+
+[node name="BasicEnemyAttack351" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-59, -311)
+
+[node name="BasicEnemyAttack352" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-147, -336)
+
+[node name="BasicEnemyAttack353" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-136, -336)
+
+[node name="BasicEnemyAttack354" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-125, -336)
+
+[node name="BasicEnemyAttack355" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-114, -336)
+
+[node name="BasicEnemyAttack356" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-92, -336)
+
+[node name="BasicEnemyAttack357" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-81, -336)
+
+[node name="BasicEnemyAttack358" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-70, -336)
+
+[node name="BasicEnemyAttack359" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-158, -311)
+
+[node name="BasicEnemyAttack360" parent="." instance=ExtResource("2_5ytgk")]
+position = Vector2(-59, -336)
+
+[node name="3RdShip" parent="." instance=ExtResource("1_yo4ys")]
+position = Vector2(-1, 11)
+smoothness = 2.5
