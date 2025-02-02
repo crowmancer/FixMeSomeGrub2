@@ -7,8 +7,11 @@ var PLAYERDATA
 func _ready() -> void:
 	if(error == OK):
 		PLAYERDATA = json.get_data()
+		var currentStation = find_child(PLAYERDATA["currentStation"])
+		currentStation.mark()
 	else:
 		OS.alert("Something went wrong with parsing game data!")
+		pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

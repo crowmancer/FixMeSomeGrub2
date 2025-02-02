@@ -1,10 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://ok75erp3r17y"]
+[gd_scene load_steps=6 format=3 uid="uid://ok75erp3r17y"]
 
 [ext_resource type="Texture2D" uid="uid://c04yxw5ieeqdh" path="res://Navigation/stars 11.jpg" id="1_2l3rf"]
 [ext_resource type="Script" uid="uid://dp3esot5p7yn6" path="res://Navigation/Start_navigation.gd" id="1_3u1lh"]
 [ext_resource type="PackedScene" uid="uid://b2dcxbj6xvbws" path="res://Navigation/SpacePort.tscn" id="2_v6upb"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2l3rf"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3u1lh"]
+font_size = 25
 
 [node name="Navigation" type="Node2D"]
 material = SubResource("CanvasItemMaterial_2l3rf")
@@ -25,23 +28,31 @@ portName = "Terra Spaceport"
 portDesc = "This is the last of what remains of Earth."
 
 [node name="Nyx Station" parent="." instance=ExtResource("2_v6upb")]
-position = Vector2(-24, -8)
-nextPorts = Array[NodePath]([NodePath("../Hoodwinker"), NodePath("../Aeon Station")])
+position = Vector2(-57, 66)
+nextPorts = Array[NodePath]([NodePath("../Hoodwinker"), NodePath("../Willie Station")])
 portName = "Nyx Station"
 portDesc = "They say the stars glow brighter here."
 
 [node name="Hoodwinker" parent="." instance=ExtResource("2_v6upb")]
 position = Vector2(273, 142)
-nextPorts = Array[NodePath]([NodePath("../End Planet")])
+nextPorts = Array[NodePath]([NodePath("../Keplar"), NodePath("../Willie Station")])
 portDesc = "Named after a dubious fellow."
 
-[node name="Aeon Station" parent="." instance=ExtResource("2_v6upb")]
+[node name="Willie Station" parent="." instance=ExtResource("2_v6upb")]
 position = Vector2(204, -77)
-nextPorts = Array[NodePath]([NodePath("../End Planet")])
-portName = "Aeon Station"
-portDesc = "Recently opened."
+nextPorts = Array[NodePath]([NodePath("../Keplar")])
+portName = "Willie Station"
+portDesc = "Named after famed astronaut Willie Wild who stayed up for 5 nights in a row."
 
-[node name="End Planet" parent="." instance=ExtResource("2_v6upb")]
+[node name="Keplar" parent="." instance=ExtResource("2_v6upb")]
 position = Vector2(455, 30)
 portName = "Keplar"
 portDesc = "A place for a new home."
+
+[node name="MoneyLabel" type="Label" parent="."]
+offset_left = 385.0
+offset_top = -315.0
+offset_right = 564.0
+offset_bottom = -280.0
+text = "£0 / £1,000,000"
+label_settings = SubResource("LabelSettings_3u1lh")
