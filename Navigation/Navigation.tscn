@@ -50,9 +50,17 @@ portName = "Keplar"
 portDesc = "A place for a new home."
 
 [node name="MoneyLabel" type="Label" parent="."]
-offset_left = 385.0
-offset_top = -315.0
-offset_right = 564.0
-offset_bottom = -280.0
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 384.0
+offset_top = -310.0
+offset_right = 563.0
+offset_bottom = -275.0
+grow_horizontal = 0
+grow_vertical = 2
 text = "£0 / £1,000,000"
 label_settings = SubResource("LabelSettings_3u1lh")
+horizontal_alignment = 2
