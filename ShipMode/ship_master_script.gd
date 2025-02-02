@@ -13,16 +13,11 @@ static var PLAYERDATA
 func _ready() -> void:
 	if(error == OK):
 		PLAYERDATA = json.data
-		for i in range(len(partHealths)):
-			partHealths[i] = PLAYERDATA["shipPartsHP"][i]
+		for i in range(len(PLAYERDATA["shipPartsHP"])):
+			partHealths[i] = int(PLAYERDATA["shipPartsHP"][i])
 			if(partHealths[i] < 0):
 				var room:Node = get_node(roomNodes[i])
 				var collider:Node = room.find_child("CollisionShape2D")
 				room.visible = true
 				collider.disabled = false
 		ShipHP = PLAYERDATA["shipHP"]
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass

@@ -10,6 +10,7 @@
 
 [node name="ShipScene" type="Node2D"]
 script = ExtResource("1_cgl5h")
+partHealths = Array[int]([0, 0, 0, 0, 0, 0])
 roomNodes = Array[NodePath]([NodePath("Room0"), NodePath("Room1"), NodePath("Room2"), NodePath("Room3"), NodePath("Room4"), NodePath("Room5")])
 
 [node name="Shipfine" type="Sprite2D" parent="."]
@@ -30,7 +31,6 @@ visible = false
 modulate = Color(0, 0, 0, 1)
 position = Vector2(-283, -116)
 scale = Vector2(7.40922, 5.76637)
-collision_layer = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Room0"]
 shape = SubResource("RectangleShape2D_vbtma")
@@ -46,7 +46,6 @@ visible = false
 modulate = Color(0, 0, 0, 1)
 position = Vector2(-131, -116)
 scale = Vector2(7.40922, 5.76637)
-collision_layer = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Room1"]
 shape = SubResource("RectangleShape2D_vbtma")
@@ -62,7 +61,6 @@ visible = false
 modulate = Color(0, 0, 0, 1)
 position = Vector2(36, -116)
 scale = Vector2(7.40922, 5.76637)
-collision_layer = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Room2"]
 shape = SubResource("RectangleShape2D_vbtma")
@@ -78,7 +76,6 @@ visible = false
 modulate = Color(0, 0, 0, 1)
 position = Vector2(-291, 112)
 scale = Vector2(7.40922, 5.76637)
-collision_layer = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Room3"]
 shape = SubResource("RectangleShape2D_vbtma")
@@ -94,7 +91,6 @@ visible = false
 modulate = Color(0, 0, 0, 1)
 position = Vector2(-132, 112)
 scale = Vector2(7.40922, 5.76637)
-collision_layer = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Room4"]
 shape = SubResource("RectangleShape2D_vbtma")
@@ -110,7 +106,6 @@ visible = false
 modulate = Color(0, 0, 0, 1)
 position = Vector2(31, 104)
 scale = Vector2(7.40922, 5.76637)
-collision_layer = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Room5"]
 shape = SubResource("RectangleShape2D_vbtma")
