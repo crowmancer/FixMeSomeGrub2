@@ -1,0 +1,109 @@
+[gd_scene load_steps=3 format=3 uid="uid://biad0ptuhe33"]
+
+[ext_resource type="Script" uid="uid://b3bm8poaugh3s" path="res://Navigation/Shop/shop_script.gd" id="1_a7fyl"]
+[ext_resource type="Script" uid="uid://itq24uyyhg0k" path="res://Navigation/Shop/return_button.gd" id="1_b2227"]
+
+[node name="Shop" type="Control"]
+z_index = 6
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a7fyl")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -225.0
+offset_right = 225.0
+offset_bottom = 225.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Box Parent" type="BoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+vertical = true
+
+[node name="HBoxContainer" type="BoxContainer" parent="Box Parent"]
+layout_mode = 2
+size_flags_vertical = 3
+vertical = true
+
+[node name="HBox1-3" type="HBoxContainer" parent="Box Parent/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Room1" type="Button" parent="Box Parent/HBoxContainer/HBox1-3"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+disabled = true
+text = "Repair Room 1"
+
+[node name="Room2" type="Button" parent="Box Parent/HBoxContainer/HBox1-3"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+disabled = true
+text = "Repair Room 2"
+
+[node name="Room3" type="Button" parent="Box Parent/HBoxContainer/HBox1-3"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+disabled = true
+text = "Repair Room 3"
+
+[node name="Hbox4-6" type="HBoxContainer" parent="Box Parent/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Room4" type="Button" parent="Box Parent/HBoxContainer/Hbox4-6"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+disabled = true
+text = "Repair Room 4"
+
+[node name="Room5" type="Button" parent="Box Parent/HBoxContainer/Hbox4-6"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+disabled = true
+text = "Repair Room 5"
+
+[node name="Room6" type="Button" parent="Box Parent/HBoxContainer/Hbox4-6"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+disabled = true
+text = "Repair Room 6"
+
+[node name="ReturnButton" type="Button" parent="Box Parent"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.25
+mouse_default_cursor_shape = 2
+text = "Return"
+script = ExtResource("1_b2227")
+
+[connection signal="pressed" from="Box Parent/HBoxContainer/HBox1-3/Room1" to="." method="_on_room_1_pressed"]
+[connection signal="pressed" from="Box Parent/ReturnButton" to="Box Parent/ReturnButton" method="_on_pressed"]

@@ -53,3 +53,5 @@ text = "Take Job"
 visible = false
 layout_mode = 2
 text = "Open shop"
+
+[connection signal="pressed" from="BoxContainer/ShopButton" to="." method="_on_shop_button_pressed"]
