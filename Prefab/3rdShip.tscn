@@ -1,7 +1,8 @@
-[gd_scene load_steps=26 format=3 uid="uid://cfhbk7v561q84"]
+[gd_scene load_steps=33 format=3 uid="uid://cfhbk7v561q84"]
 
 [ext_resource type="Texture2D" uid="uid://cirumr31ktu05" path="res://Sprites/Ship/C.png" id="1_lsiem"]
 [ext_resource type="Script" uid="uid://qwi2rxvg4645" path="res://Scripts/ShipHP.gd" id="1_n8eep"]
+[ext_resource type="Script" uid="uid://5idwr2162rk0" path="res://Scenes/ShipControl.gd" id="1_t81lg"]
 [ext_resource type="Texture2D" uid="uid://p5sxjkxq5o3x" path="res://Sprites/Ship/CR.png" id="2_n8eep"]
 [ext_resource type="Texture2D" uid="uid://c7mh0qwgj14bl" path="res://Sprites/Ship/CL.png" id="3_7pmdi"]
 [ext_resource type="Script" uid="uid://dp8sqj4q8crso" path="res://Scripts/MainHitbox.gd" id="3_y552v"]
@@ -11,7 +12,13 @@
 [ext_resource type="Texture2D" uid="uid://snarti0bl0q4" path="res://Sprites/Ship/fine/bottomF.png" id="7_xf7by"]
 [ext_resource type="Script" uid="uid://d1sfktblici6e" path="res://Scripts/PartHitbox.gd" id="7_y552v"]
 [ext_resource type="Texture2D" uid="uid://e6jpxil4mes3" path="res://Sprites/Ship/fine/bottomLF.png" id="8_0gmq8"]
+[ext_resource type="Texture2D" uid="uid://hi26b3k2scax" path="res://Sprites/Ship/broken/TLB.png" id="8_jswkm"]
 [ext_resource type="Texture2D" uid="uid://b7bc233aytliu" path="res://Sprites/Ship/fine/bottomRF.png" id="9_s5tjp"]
+[ext_resource type="Texture2D" uid="uid://bwesljju5062n" path="res://Sprites/Ship/broken/TB.png" id="10_d8ygy"]
+[ext_resource type="Texture2D" uid="uid://cnjawi05otvah" path="res://Sprites/Ship/broken/TRB.png" id="12_gaic4"]
+[ext_resource type="Texture2D" uid="uid://3w4ajwh5ublk" path="res://Sprites/Ship/broken/BLB.png" id="14_uuuca"]
+[ext_resource type="Texture2D" uid="uid://d4d6kbll0aowl" path="res://Sprites/Ship/broken/BB.png" id="16_20nsc"]
+[ext_resource type="Texture2D" uid="uid://cv3gegxe3an2c" path="res://Sprites/Ship/broken/BRB.png" id="18_mv1td"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lsiem"]
 
@@ -23,7 +30,10 @@ size = Vector2(17.5, 20)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jswkm"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_jswkm")
+}],
 "loop": true,
 "name": &"Destroyed",
 "speed": 5.0
@@ -39,7 +49,10 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_18cxu"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_d8ygy")
+}],
 "loop": true,
 "name": &"Destroyed",
 "speed": 5.0
@@ -58,7 +71,10 @@ size = Vector2(20, 16.875)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_d8ygy"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_gaic4")
+}],
 "loop": true,
 "name": &"Destroyed",
 "speed": 5.0
@@ -77,7 +93,10 @@ size = Vector2(10.625, 10.625)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_uuuca"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_uuuca")
+}],
 "loop": true,
 "name": &"Destroyed",
 "speed": 5.0
@@ -93,7 +112,10 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gaic4"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_20nsc")
+}],
 "loop": true,
 "name": &"Destroyed",
 "speed": 5.0
@@ -112,7 +134,10 @@ size = Vector2(20, 16.875)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_20nsc"]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_mv1td")
+}],
 "loop": true,
 "name": &"Destroyed",
 "speed": 5.0
@@ -129,126 +154,141 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xf7by"]
 size = Vector2(10.625, 10.625)
 
-[node name="3RdShip" type="Node2D"]
+[node name="3RdShip" type="CharacterBody2D" node_paths=PackedStringArray("cursor_smooth")]
+motion_mode = 1
+script = ExtResource("1_t81lg")
+cursor_smooth = NodePath("CursorFollow")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(39, 0)
+[node name="container" type="Node2D" parent="." node_paths=PackedStringArray("partSprites", "partColliders")]
+script = ExtResource("1_n8eep")
+partHealths = Array[int]([100, 100, 100, 100, 100, 100])
+partSprites = [NodePath("LeftT/LeftT"), NodePath("CenterT/CenterT"), NodePath("RightT/RightT"), NodePath("LeftB/LeftB"), NodePath("CenterB/CenterB"), NodePath("RightB/RightB")]
+partColliders = [NodePath("LeftT/CollisionShape2D"), NodePath("CenterT/CollisionShape2D"), NodePath("RightT/CollisionShape2D"), NodePath("LeftB/CollisionShape2D"), NodePath("CenterB/CollisionShape2D"), NodePath("RightB/CollisionShape2D")]
+
+[node name="Camera2D" type="Camera2D" parent="container"]
+position = Vector2(38, 0)
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 
-[node name="Displayer" type="Node" parent="."]
-script = ExtResource("1_n8eep")
+[node name="Center" type="Area2D" parent="container" groups=["Ship"]]
+script = ExtResource("3_y552v")
 
-[node name="Center" type="Area2D" parent="Displayer"]
-
-[node name="Center" type="Sprite2D" parent="Displayer/Center"]
+[node name="Center" type="Sprite2D" parent="container/Center"]
 texture = ExtResource("1_lsiem")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Displayer/Center"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="container/Center"]
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_lsiem")
 
-[node name="Right" type="Area2D" parent="Displayer"]
+[node name="Right" type="Area2D" parent="container" groups=["Ship"]]
 position = Vector2(32, 0)
 script = ExtResource("3_y552v")
 
-[node name="Right" type="Sprite2D" parent="Displayer/Right"]
+[node name="Right" type="Sprite2D" parent="container/Right"]
 texture = ExtResource("2_n8eep")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Displayer/Right"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="container/Right"]
 position = Vector2(-3.5, 0)
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_n8eep")
 
-[node name="Left" type="Area2D" parent="Displayer"]
+[node name="Left" type="Area2D" parent="container" groups=["Ship"]]
 position = Vector2(-32, 0)
 script = ExtResource("3_y552v")
 
-[node name="Left" type="Sprite2D" parent="Displayer/Left"]
+[node name="Left" type="Sprite2D" parent="container/Left"]
 texture = ExtResource("3_7pmdi")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Displayer/Left"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="container/Left"]
 position = Vector2(2, 0)
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_7pmdi")
 
-[node name="LeftT" type="Area2D" parent="Displayer"]
+[node name="LeftT" type="Area2D" parent="container" groups=["Ship"]]
 position = Vector2(-32, -32)
 script = ExtResource("7_y552v")
 
-[node name="LeftT" type="AnimatedSprite2D" parent="Displayer/LeftT"]
+[node name="LeftT" type="AnimatedSprite2D" parent="container/LeftT"]
 sprite_frames = SubResource("SpriteFrames_jswkm")
 animation = &"Fine"
 autoplay = "Fine"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Displayer/LeftT"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="container/LeftT"]
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_lsiem")
 
-[node name="CenterT" type="Area2D" parent="Displayer"]
+[node name="CenterT" type="Area2D" parent="container" groups=["Ship"]]
 position = Vector2(0, -32)
 script = ExtResource("7_y552v")
+partNum = 1
 
-[node name="CenterT" type="AnimatedSprite2D" parent="Displayer/CenterT"]
+[node name="CenterT" type="AnimatedSprite2D" parent="container/CenterT"]
 sprite_frames = SubResource("SpriteFrames_18cxu")
 animation = &"Fine"
 autoplay = "Fine"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Displayer/CenterT"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="container/CenterT"]
 position = Vector2(0, 2.5)
 scale = Vector2(1.6, 1.63071)
 shape = SubResource("RectangleShape2D_y552v")
 
-[node name="RightT" type="Area2D" parent="Displayer"]
+[node name="RightT" type="Area2D" parent="container" groups=["Ship"]]
 position = Vector2(32, -32)
 script = ExtResource("7_y552v")
+partNum = 2
 
-[node name="RightT" type="AnimatedSprite2D" parent="Displayer/RightT"]
+[node name="RightT" type="AnimatedSprite2D" parent="container/RightT"]
 sprite_frames = SubResource("SpriteFrames_d8ygy")
 animation = &"Fine"
 autoplay = "Fine"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Displayer/RightT"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="container/RightT"]
 position = Vector2(-7.5, 7.5)
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_t81lg")
 
-[node name="LeftB" type="Area2D" parent="Displayer"]
+[node name="LeftB" type="Area2D" parent="container" groups=["Ship"]]
 position = Vector2(-32, 32)
 script = ExtResource("7_y552v")
+partNum = 3
 
-[node name="LeftB" type="AnimatedSprite2D" parent="Displayer/LeftB"]
+[node name="LeftB" type="AnimatedSprite2D" parent="container/LeftB"]
 sprite_frames = SubResource("SpriteFrames_uuuca")
 animation = &"Fine"
 autoplay = "Fine"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Displayer/LeftB"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="container/LeftB"]
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_lsiem")
 
-[node name="CenterB" type="Area2D" parent="Displayer"]
+[node name="CenterB" type="Area2D" parent="container" groups=["Ship"]]
 position = Vector2(0, 32)
 script = ExtResource("7_y552v")
+partNum = 4
 
-[node name="CenterB" type="AnimatedSprite2D" parent="Displayer/CenterB"]
+[node name="CenterB" type="AnimatedSprite2D" parent="container/CenterB"]
 sprite_frames = SubResource("SpriteFrames_gaic4")
 animation = &"Fine"
 autoplay = "Fine"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Displayer/CenterB"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="container/CenterB"]
 position = Vector2(0, -2.5)
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_yhmfo")
 
-[node name="RightB" type="Area2D" parent="Displayer"]
+[node name="RightB" type="Area2D" parent="container" groups=["Ship"]]
 position = Vector2(32, 32)
 script = ExtResource("7_y552v")
+partNum = 5
 
-[node name="RightB" type="AnimatedSprite2D" parent="Displayer/RightB"]
+[node name="RightB" type="AnimatedSprite2D" parent="container/RightB"]
 sprite_frames = SubResource("SpriteFrames_20nsc")
 animation = &"Fine"
+autoplay = "Fine"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Displayer/RightB"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="container/RightB"]
 position = Vector2(-7.5, -7.5)
 scale = Vector2(1.6, 1.6)
 shape = SubResource("RectangleShape2D_xf7by")
+
+[node name="CursorFollow" type="Node2D" parent="."]
