@@ -27,7 +27,9 @@ static var smallinfo
 func _input_event(_viewport: Viewport, _event: InputEvent, _shape_idx: int) -> void:
 	if(Input.is_action_just_pressed("left_mouse_click")):
 		if(smallinfo):
+			##clear the already open infobox
 			smallinfo.queue_free()
+			
 		smallinfo = preload("res://Navigation/portInfo.tscn").instantiate()
 		add_sibling(smallinfo)
 		smallinfo.display(portDesc,global_position)
