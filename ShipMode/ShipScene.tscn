@@ -1,10 +1,16 @@
-[gd_scene load_steps=4 format=4 uid="uid://b3vw8sim5ccq5"]
+[gd_scene load_steps=7 format=4 uid="uid://b3vw8sim5ccq5"]
 
 [ext_resource type="TileSet" uid="uid://dssbne6xwtyoa" path="res://test_tile_set.tres" id="1_6oy1q"]
+[ext_resource type="Script" uid="uid://t6yyhh04wa7e" path="res://ShipMode/ship_master_script.gd" id="1_cgl5h"]
 [ext_resource type="Texture2D" uid="uid://dbqf50bxav8i8" path="res://Sprites/Ship/sillouhette.png" id="1_mxlsd"]
 [ext_resource type="PackedScene" uid="uid://0m8q3ilgs0it" path="res://ShipMode/ShipModePlayer.tscn" id="1_pie7p"]
+[ext_resource type="Texture2D" uid="uid://dlhvyv0mo6utm" path="res://tile.png" id="5_bgvjm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vbtma"]
 
 [node name="ShipScene" type="Node2D"]
+script = ExtResource("1_cgl5h")
+roomNodes = Array[NodePath]([NodePath("Room0"), NodePath("Room1"), NodePath("Room2"), NodePath("Room3"), NodePath("Room4"), NodePath("Room5")])
 
 [node name="Shipfine" type="Sprite2D" parent="."]
 position = Vector2(-186, 0)
@@ -18,3 +24,99 @@ tile_set = ExtResource("1_6oy1q")
 
 [node name="Player" parent="." instance=ExtResource("1_pie7p")]
 position = Vector2(-433, 3)
+
+[node name="Room0" type="StaticBody2D" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-283, -116)
+scale = Vector2(7.40922, 5.76637)
+collision_layer = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room0"]
+shape = SubResource("RectangleShape2D_vbtma")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Room0"]
+position = Vector2(-5.96046e-08, 1.19209e-07)
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("5_bgvjm")
+
+[node name="Room1" type="StaticBody2D" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-131, -116)
+scale = Vector2(7.40922, 5.76637)
+collision_layer = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room1"]
+shape = SubResource("RectangleShape2D_vbtma")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Room1"]
+position = Vector2(-5.96046e-08, 1.19209e-07)
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("5_bgvjm")
+
+[node name="Room2" type="StaticBody2D" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 1)
+position = Vector2(36, -116)
+scale = Vector2(7.40922, 5.76637)
+collision_layer = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room2"]
+shape = SubResource("RectangleShape2D_vbtma")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Room2"]
+position = Vector2(-5.96046e-08, 1.19209e-07)
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("5_bgvjm")
+
+[node name="Room3" type="StaticBody2D" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-291, 112)
+scale = Vector2(7.40922, 5.76637)
+collision_layer = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room3"]
+shape = SubResource("RectangleShape2D_vbtma")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Room3"]
+position = Vector2(-5.96046e-08, 1.19209e-07)
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("5_bgvjm")
+
+[node name="Room4" type="StaticBody2D" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-132, 112)
+scale = Vector2(7.40922, 5.76637)
+collision_layer = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room4"]
+shape = SubResource("RectangleShape2D_vbtma")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Room4"]
+position = Vector2(-5.96046e-08, 1.19209e-07)
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("5_bgvjm")
+
+[node name="Room5" type="StaticBody2D" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 1)
+position = Vector2(31, 104)
+scale = Vector2(7.40922, 5.76637)
+collision_layer = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room5"]
+shape = SubResource("RectangleShape2D_vbtma")
+disabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Room5"]
+position = Vector2(-5.96046e-08, 1.19209e-07)
+scale = Vector2(0.625, 0.625)
+texture = ExtResource("5_bgvjm")

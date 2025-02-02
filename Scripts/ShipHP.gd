@@ -12,8 +12,10 @@ static var PLAYERDATA
 func _ready() -> void:
 	if(error == OK):
 		PLAYERDATA = json.data
-		partHealths = PLAYERDATA["shipPartsHP"]
+		for i in range(len(partHealths)):
+			partHealths[i] = PLAYERDATA["shipPartsHP"][i]
 		ShipHP = PLAYERDATA["shipHP"]
+	
 		
 
 func DamagePart(partNum, Dmg = 10):
