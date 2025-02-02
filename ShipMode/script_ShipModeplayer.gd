@@ -1,9 +1,9 @@
 extends CharacterBody2D
 
 
-const SPEED :float = 300.0
+const SPEED :float = 200.0
 const _halfPi :float = PI/2
-const RAYLEN:int = 100
+const RAYLEN:int = 50
 static var carryBox:bool = false;
 
 func _ready() -> void:

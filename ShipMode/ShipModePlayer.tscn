@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bgnyc5wwi8g7s" path="res://ShipMode/char.png" id="2_onrkg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_onrkg"]
-radius = 16.0
+radius = 13.0
 
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
