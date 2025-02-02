@@ -11,10 +11,9 @@ func _process(_delta: float) -> void:
 	pass
 
 
-func display(portDesc:String, pos:Vector2, isAvailable:bool = false):
+func display(portDesc:String, pos:Vector2, isAvailable:bool = false,isShop:bool = false):
 	find_child("PortDesc").text = portDesc
 	position = pos + Vector2(0,20)
-	if(isAvailable):
-		$BoxContainer/Button.visible = true;
-	else:
-		$BoxContainer/Button.visible = false;
+	
+	$BoxContainer/Button.visible = isAvailable
+	$BoxContainer/ShopButton.visible = isShop
