@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bm4uglblrc7ao"]
+
+[ext_resource type="Script" uid="uid://cywr2ivr1nf8h" path="res://ShipMode/cargo_box.gd" id="1_ba3xr"]
+[ext_resource type="Texture2D" uid="uid://dlhvyv0mo6utm" path="res://tile.png" id="1_i2gn5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ba3xr"]
+size = Vector2(32, 32)
+
+[node name="CargoBox" type="StaticBody2D"]
+collision_layer = 3
+collision_mask = 2
+input_pickable = true
+script = ExtResource("1_ba3xr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ba3xr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_i2gn5")
